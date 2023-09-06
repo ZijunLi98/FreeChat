@@ -1,0 +1,99 @@
+.chatContainer {
+  position: relative;
+  .chats {
+    border-style: solid;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: inherit;
+    border-color: #dee2e6;
+    border-width: 0.2rem;
+    color: black;
+    font-weight: 500;
+    transition: background-color 0.2s;
+
+    .renameInput {
+      border: none;
+      border-bottom: 1px solid #868e96;
+      height: 100%;
+      font-size: 1.6rem;
+      background-color: transparent;
+      width: 70%;
+    }
+    .renameInput:focus {
+      outline: none;
+    }
+  }
+
+  .chats.isActive {
+    background-color: rgb(242, 242, 242);
+    border-color: rgb(16, 163, 127);
+  }
+
+  .chats:hover {
+    background-color: rgb(242, 242, 242) !important;
+  }
+
+  .manageBtns {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1.2rem;
+    height: 100%;
+
+    button {
+      padding: 0.4rem;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+
+      svg {
+        transition: color 0.3s;
+      }
+    }
+
+    .renameBtn,
+    .deleteBtn {
+      svg {
+        width: 1.6rem;
+        height: auto;
+      }
+    }
+
+    .closeBtn,
+    .confirmBtn {
+      padding: 0.4rem 0.3rem;
+      svg {
+        width: 1.8rem;
+        height: auto;
+      }
+    }
+
+    .confirmBtn:hover,
+    .renameBtn:hover {
+      svg {
+        color: #94d82d;
+      }
+    }
+
+    .deleteBtn:hover,
+    .closeBtn:hover {
+      svg {
+        color: #e03131;
+      }
+    }
+  }
+}

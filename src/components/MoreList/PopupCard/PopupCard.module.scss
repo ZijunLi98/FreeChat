@@ -1,0 +1,87 @@
+.wrapper {
+  position: relative;
+  z-index: 50;
+
+  .bgCover {
+    opacity: 1;
+    background-color: hsla(240, 9%, 59%, 0.9);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  .cardWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    
+    .cardContainer {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      border-radius: 8px;
+
+      .cardHeader {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.6rem 2.4rem;
+        border-bottom: 1px solid #d9d9e3;
+
+        .closeBtn {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            width: 20px;
+            height: auto;
+          }
+        }
+      }
+      .cardMain {
+        padding: 2.4rem;
+
+        form {
+          flex-direction: column;
+          display: flex;
+          gap: 1.6rem;
+
+          input,
+          button {
+            font-size: 1.6rem;
+          }
+
+          button {
+            border-radius: 8px;
+            font-weight: 600;
+            padding: 1.2rem;
+            background-color: #10a37f;
+            border: none;
+          }
+
+          button:disabled {
+            background-color: #d9d9e3;
+          }
+        }
+      }
+    }
+  }
+}

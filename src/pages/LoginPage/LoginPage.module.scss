@@ -1,0 +1,148 @@
+$main-color: #37b24d;
+$main-gray: rgb(209, 209, 209);
+
+.PageWrapper {
+  max-width: 60rem;
+  margin: 0 auto;
+  height: 100%;
+  padding: 6rem 3rem;
+  position: relative;
+
+  .messageWrapper {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    height: 30vh;
+    width: 100%;
+
+    .messageContainer {
+      background-color: #f1f3f5;
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 0 auto;
+      width: 90%;
+      height: 100%;
+
+      h1 {
+        margin-bottom: 4rem;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .titleContainer {
+    margin-bottom: 3.2rem;
+
+    .logoContainer {
+      background-color: $main-color;
+      width: 4.8rem;
+      height: 4.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-bottom: 1.2rem;
+
+      svg {
+        width: 3.6rem;
+        height: auto;
+        color: white;
+      }
+    }
+  }
+
+  .returnContainer {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+
+    .returnBtn {
+      text-decoration: none;
+      color: #343a40;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+
+      svg {
+        height: 2.4rem;
+        width: auto;
+      }
+    }
+  }
+
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+
+    .footerContainer {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+      }
+
+      .register {
+        color: $main-color;
+      }
+
+      .forgetPassword {
+        color: $main-gray;
+      }
+    }
+
+    .loginBtn {
+      background-color: $main-color;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 700;
+      height: 4rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      transition: background-color 0.2s;
+    }
+
+    .loginBtn:disabled {
+      background-color: $main-gray;
+    }
+
+    .mainLoginContainer {
+      width: 100%;
+      text-align: left;
+
+      .fieldWrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        label {
+          margin-bottom: 0.8rem;
+          font-weight: bold;
+
+          span {
+            color: rgb(217, 80, 76);
+          }
+        }
+
+        input {
+          // border: none;
+          border-radius: 3px;
+          border: none;
+          border-bottom: 1px solid rgb(209, 209, 209);
+          padding: 1rem;
+          height: 4rem;
+          font-size: 1.4rem;
+        }
+
+        input:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.listContent {
+  flex: 1 1 0%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    padding: 0.8rem;
+
+    .actionBtn {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      padding: 1.2rem;
+      border-radius: 1rem;
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: inherit;
+      border-color: #dee2e6;
+      border-width: 0.2rem;
+      color: black;
+      font-weight: 500;
+      transition: background-color 0.2s;
+
+      span {
+        flex: 1;
+      }
+    }
+
+    .actionBtn:hover {
+      background-color: #e9ecef;
+    }
+
+    .newChat {
+      border-style: dashed;
+      justify-content: center;
+    }
+
+    .chatRoomListScroller {
+      border-bottom: 0.2rem solid #adb5bd;
+      overflow-y: auto;
+      flex: 1 1 0%;
+      margin: 12px 0;
+
+      .chatRoomList {
+        display: flex;
+        gap: 0.8rem;
+        padding-bottom: 0.8rem;
+        flex-direction: column;
+      }
+    }
+  }
+}
